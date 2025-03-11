@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCORPION official</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background: url('c:\Users\Fanta\OneDrive\Desktop\scorpion\IMG_6741.gif') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 0, 0, 0.8);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        
+        #logo {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgb(255, 94, 0);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 5px;
+        }
+        .dropdown-content a {
+            color: rgb(255, 187, 0);
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        audio {
+            width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        document.addEventListener("c:\Users\Fanta\OneDrive\Desktop\scorpion web\logo scorpion.png", function() {
+            document.body.style.background = "c:\Users\Fanta\OneDrive\Desktop\scorpion web\logo scorpion.png";
+            document.body.style.backgroundSize = "cover";
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img id="logo" src="c:\Users\Fanta\OneDrive\Desktop\scorpion web\logo scorpion.png" alt="Logo">
+        <h1>SCORPION OFFICIAL </h1>
+        <p>Professione | Talenti | Ambizioni</p>
+        <p>Ciao! Sono Nome, un esperto in [campo di specializzazione]. Con la mia esperienza e passione, collaboro con aziende e brand per raggiungere nuovi traguardi.</p>
+        
+        <div class="dropdown">
+            <button>🌍 Social</button>
+            <div class="dropdown-content">
+                <a href="https://www.instagram.com" target="_blank">📸 Instagram</a>
+                <a href="https://www.tiktok.com" target="_blank">🎵 TikTok</a>
+                <a href="https://discord.com" target="_blank">💬 Discord</a>
+                <a href="https://www.yoursite.com" target="_blank">🌐 Sito Web</a>
+            </div>
+        </div>
+        
+        <audio id="musicPlayer" controls>
+            <source src="https://github.com/chris33433/SCORPION.OFFICIAL/blob/main/musica%20santiago%20rp.mp3" type="audio/mpeg">
+            Il tuo browser non supporta l'elemento audio.
+        </audio>
+        <br>
+        <button onclick="playMusic()">▶️ Play</button>
+        <button onclick="pauseMusic()">⏸️ Pause</button>
+        <button onclick="stopMusic()">⏹️ Stop</button>
+        <button onclick="increaseVolume()">🔊 +</button>
+        <button onclick="decreaseVolume()">🔉 -</button>
+
+        <script>
+            const musicPlayer = document.getElementById("musicPlayer");
+            function playMusic() {
+                musicPlayer.play();
+            }
+            function pauseMusic() {
+                musicPlayer.pause();
+            }
+            function stopMusic() {
+                musicPlayer.pause();
+                musicPlayer.currentTime = 0;
+            }
+            function increaseVolume() {
+                if (musicPlayer.volume < 1) musicPlayer.volume += 0.1;
+            }
+            function decreaseVolume() {
+                if (musicPlayer.volume > 0) musicPlayer.volume -= 0.1;
+            }
+        </script>
+    </div>
+</body>
+</html>
+
+
